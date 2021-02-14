@@ -25,7 +25,7 @@ const showImages = (images) => {
     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">`;
     gallery.appendChild(div);
   })
-  // displaySpinner()
+  displaySpinner()
 }
 const getImages = (query) => {
   const url = `https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`
